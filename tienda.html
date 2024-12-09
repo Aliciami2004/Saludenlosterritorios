@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="./css/estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Sumate</title>
+    <body>
+        <header>  
+        <div class="cabecera">
+            <div class="logo">
+                <img src="img/saludenlosterritorioslogo.png" alt="imagen de un árbol frondoso con amplias raíces">
+                <h1>ALIMENTOS SIN VENENOS</h1>
+            </div>
+            <div class="barra">
+                <nav >
+                    <ul class="barra">
+                        <!--Enlace dentro del botom -->
+                        <li>
+                        <a href="index.html"><button>Inicio</button></a>
+                        </li>
+                        <li>
+                        <a href="enlosterritorios.html"><button>¿Qué pasa en los territorios?</button></a>
+                        </li>
+                        <li>
+                         <a href="ciencia.html"><button>¿Qué dice la ciencia?</button></a>           
+                        </li>
+                        <li>
+                         <a href="guiasyprotocolos.html"><button>Guías/Protocolos</button></a> 
+                        </li>
+                        <li>
+                         <a href="sumate.html"><button>Sumate</button></a>     
+                        <!--Enlace con botom adentro -->
+                        </li>
+                        <li>
+                         <a href="tienda.html"><button>Colabora</button></a>     
+                         <!--Enlace con botom adentro -->
+                        </li>
+                    </ul>  
+                    </nav>
+            </div>
+        </div>   
+        </header>
+    <main class="inicio">
+        <div>
+            <h2 class="portadatitulo">Podes colaborar invitando cafecitos </h2>
+        </div>
+        <div class="contenedorresumen">
+            <h5>Resumen Tienda</h5>
+            <hr>
+            <div id="carrito"></div>
+            <hr>
+            <section>
+                <button id="btnPagar" onclick="pagar()">Pagar</button>
+                <button id="btnLimpiar" onclick="limpiarCarrito()">Vaciar Carrito</button>
+                <hr>
+            </section>
+        </div>
+    
+        <div class="contenedorcolaborar">
+        <section>
+            <div class="tarjeta">
+                <h5>$ 1000.-</h5>
+                <img class="colaborarimagen" src="./img/Colaboro1.png" alt="imagen de?"  >
+                <button id="btnComprar" onclick="agregarProducto('1 Cafecito', 1000)">Comprar</button>
+            </div>
+        </section>
+        <br>
+        <section>
+            <div class="tarjeta">
+                <h5>$ 2000.-</h5>
+                <img class="colaborarimagen" src="./img/Colaboro2.png" alt="imagen de?"  >
+                <button id="btnComprar" onclick="agregarProducto('2 Cafecitos', 2000)">Comprar</button>
+            </div>
+        </section>
+        <section>
+            <div class="tarjeta">
+                <h5>$ 3000.-</h5>
+                <img class="colaborarimagen" src="./img/Colaboro3.png" alt="imagen de?"  >
+                <button id="btnComprar" onclick="agregarProducto('3 Cafecitos', 3000)">Comprar</button>
+            </div>
+        </section>
+    </div>
+    </main>
+    
+<footer class="redes">
+        <br>
+        <div class="piepagina">
+            <h5>Desarrollado con fines de curso</h5>
+        </div>
+        <div class="piepagina">
+            <i class="bx bx-envelope"></i>
+            <a href="mailto:aliciami2004@gmail.com">Mail</a>
+            <i class="bx bxl-whatsapp bx-md"></i>
+            <a href="https://wa.me/1155555555">Whatsapp</a>
+            <i class="bx bxl-instagram bx-md"></i>
+            <a href="https://www.instagram.com/alicia__iglesias">Instagram</a>
+            <i class="bx bxl-facebook-square bx-md"></i>
+            <a href="https://www.facebook.com/alicia.iglesias.3114">Facebook</a>
+        </div>
+
+</footer>
+
+    <script src="./js/tienda.js"> </script> 
+</body>
+</html>
